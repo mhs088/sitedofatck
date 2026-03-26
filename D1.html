@@ -122,16 +122,34 @@
                   }
                 }
               </script>
-<div class="swiper-wrapper align-items-center">
-  <!-- O vídeo está no lugar certo! -->
- <div class="swiper-slide d-flex justify-content-center">
-  <video controls class="img-fluid" style="max-height: 500px; width: auto; border-radius: 10px;">
-    <source src="playascent.mp4" type="video/mp4">
-    Seu navegador não suporta a tag de vídeo.
-  </video>
-</div>
- </div> <!-- Fecha o swiper-slide -->
-    </div> <!-- Fecha o swiper-wrapper -->
+<div class="row gy-4">
+
+  <!-- COLUNA DA ESQUERDA (VÍDEO) -->
+  <div class="col-lg-8">
+    <div class="portfolio-details-slider swiper init-swiper">
+      <!-- O seu <script> do swiper-config deve ficar aqui dentro -->
+
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide d-flex justify-content-center">
+          <video controls class="img-fluid" style="max-height: 500px; width: auto; border-radius: 10px;">
+            <source src="playascent.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div> <!-- Fecha o portfolio-details-slider -->
+  </div> <!-- Fecha a col-lg-8 -->
+
+  <!-- COLUNA DA DIREITA (DESCRIÇÃO) -->
+  <div class="col-lg-4">
+    <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+      <h3>Descrição</h3>
+      <p><strong>Neste vídeo, você verá um ace feito pelo próprio TCK...</strong></p>
+    </div> <!-- Fecha o portfolio-info -->
+  </div> <!-- Fecha a col-lg-4 -->
+
+</div> <!-- Fecha a row gy-4 -->
 
 <!-- Remova qualquer </div> extra que esteja aqui antes da paginação -->
 
