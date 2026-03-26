@@ -141,21 +141,31 @@
     </div> <!-- Fecha o portfolio-details-slider -->
   </div> <!-- Fecha a col-lg-8 -->
 
-  <!-- COLUNA DA DIREITA (DESCRIÇÃO) -->
-  <div class="col-lg-4">
-    <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+<div class="row gy-4 align-items-stretch"> <!-- align-items-stretch deixa as duas caixas da mesma altura -->
+
+  <!-- COLUNA DO VÍDEO (Ajustada para col-lg-7) -->
+  <div class="col-lg-7">
+    <div class="portfolio-details-slider swiper init-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide d-flex justify-content-center">
+          <video controls class="img-fluid" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px; background: #000;">
+            <source src="playascent.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLUNA DA DESCRIÇÃO (Ajustada para col-lg-5 para ficar mais larga) -->
+  <div class="col-lg-5">
+    <div class="portfolio-info" style="height: 100%; display: flex; flex-direction: column; justify-content: center; border-radius: 10px;">
       <h3>Descrição</h3>
-      <p><strong>Neste vídeo, você verá um ace feito pelo próprio TCK. Ele começa sua jogada no meio do mapa eliminando seus inimigos e, para mostrar o nível de profissionalismo que possui, ele nega aos companheiros de time o desejo de abater os cinco oponentes. Mas, mesmo assim, mostrando sua habilidade, ele mata o último e diz o seu famoso bordão: "O sujooo!".</strong></p>
-    </div> <!-- Fecha o portfolio-info -->
-  </div> <!-- Fecha a col-lg-4 -->
+      <p style="text-align: justify; line-height: 1.6;">
+        <strong>Neste vídeo, você verá um ace feito pelo próprio TCK. Ele começa sua jogada no meio do mapa eliminando seus inimigos e, para mostrar o nível de profissionalismo que possui, ele nega aos companheiros de time o desejo de abater os cinco oponentes. Mas, mesmo assim, mostrando sua habilidade, ele mata o último e diz o seu famoso bordão: "O sujooo!".</strong>
+      </p>
+    </div>
+  </div>
 
-</div> <!-- Fecha a row gy-4 -->
-
-
-<div class="swiper-pagination"></div> 
-
-<!-- Só aqui você fecha a div principal do slider e a da coluna -->
-</div> 
 </div>
 
 
