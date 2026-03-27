@@ -33,7 +33,7 @@
     }
     video {
       width: 100%;
-      max-height: 500px;
+      max-height: 450px;
       object-fit: contain; /* ESSA LINHA TIRA O ZOOM GIGANTE */
     }
 
@@ -52,7 +52,20 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <h1 class="sitename">SITE DO TCK</h1>
-      <a href="index.html" style="color: white; text-decoration: none;">Voltar para Início</a>
+      
+      <nav id="navmenu" class="navmenu">
+        <ul>
+      
+    
+          <!-- <li><a href="#services">MAPAS</a></li> -->
+          <li class="dropdown"><a href="#services"><span>Outros mapas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+            <li><a href="D1.html">ASCENT</a></li>
+              <li><a href="D2.html"> BIND </a></li>
+              <!--<li><a href="D3.html"> ICE BOX </a></li>-->
+              <li><a href="D4.html"> ABYSS </a></li>
+            </ul>
+          </li>
     </div>
   </header>
 
