@@ -5,86 +5,83 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Melhor jogada do TCK na Icebox</title>
-  <meta name="description" content="Melhor play do TCK no mapa Icebox">
 
-  <!-- Favicons -->
-  <link href="assets/img/xd.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS Files (Bootstrap) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- CSS customizado para garantir que funcione e resolva o zoom -->
+  <style>
+    body { font-family: "Open Sans", sans-serif; background-color: #f8f9fa; color: #444; }
+    .header { background: #37517e; padding: 15px 0; color: #fff; }
+    .header .sitename { font-size: 24px; font-weight: 700; color: #fff; margin: 0; }
+    .page-title { padding: 40px 0; background: #fff; border-bottom: 1px solid #eee; margin-bottom: 40px; }
+    .page-title h1 { font-size: 28px; font-weight: 700; color: #37517e; }
+    
+    /* CSS DO VÍDEO - CORRIGE O ZOOM */
+    .video-container {
+      background: #000;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    }
+    video {
+      width: 100%;
+      max-height: 700px;
+      object-fit: contain; /* ESSA LINHA TIRA O ZOOM GIGANTE */
+    }
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    .portfolio-info {
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0 20px rgba(0,0,0,0.1);
+    }
+    .portfolio-info h3 { font-size: 22px; font-weight: 700; border-bottom: 2px solid #37517e; padding-bottom: 10px; margin-bottom: 20px; }
+  </style>
 </head>
 
-<body class="portfolio-details-page">
+<body>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">SITE DO TCK</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li class="dropdown"><a href="#"><span>Outros mapas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="D1.html">ASCENT</a></li>
-              <li><a href="D2.html">BIND</a></li>
-              <li><a href="D4.html">ABYSS</a></li>
-            </ul>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <h1 class="sitename">SITE DO TCK</h1>
+      <a href="index.html" style="color: white; text-decoration: none;">Voltar para Início</a>
     </div>
   </header>
 
   <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
+    <div class="page-title">
       <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><b><a href="index.html">MAPAS</a></b></li>
-            <li class="current">ICE BOX</li>
-          </ol>
-        </nav>
         <h1>MELHOR PLAY DA ICE BOX</h1>
       </div>
     </div>
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section class="portfolio-details">
+      <div class="container">
         <div class="row gy-4 align-items-center">
 
           <!-- COLUNA DO VÍDEO -->
           <div class="col-lg-7">
-            <div class="portfolio-details-video d-flex justify-content-center">
-              <!-- object-fit: contain resolve o problema do zoom gigante -->
-              <video controls class="img-fluid" style="width: 100%; max-height: 600px; object-fit: contain; border-radius: 10px; background: #000;">
+            <div class="video-container">
+              <video controls>
                 <source src="playicebox.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
+                Seu navegador não suporta vídeos.
               </video>
             </div>
           </div>
 
           <!-- COLUNA DA DESCRIÇÃO -->
           <div class="col-lg-5">
-            <div class="portfolio-info" style="padding: 30px; border-radius: 10px; box-shadow: 0px 0 30px rgba(0, 0, 0, 0.08); background: #fff;">
-              <h3 style="font-size: 22px; font-weight: 700; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Descrição</h3>
-              <p style="text-align: justify; line-height: 1.6; color: #444; margin-bottom: 0;">
+            <div class="portfolio-info">
+              <h3>Descrição</h3>
+              <p style="text-align: justify; line-height: 1.8;">
                 <strong>Neste vídeo, você verá um corte postado pelo 'valorant_cortes', no qual ele mostra que, quando o TCK começa a jogar sério, não tem como os inimigos vencerem. TCK faz um 4K absurdo no bomb B da Icebox usando apenas uma Shorty e uma Sheriff (e afirma que possui 144 de QI).</strong>
               </p>
             </div>
@@ -95,24 +92,8 @@
     </section>
   </main>
 
-  <footer id="footer" class="footer">
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
-    </div>
-  </footer>
-
-  <!-- Vendor JS Files -->
+  <!-- Arquivos JS necessários -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 </html>
