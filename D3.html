@@ -39,9 +39,10 @@
       box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
     }
     video {
-      width: 100%;
-      max-height: 450px;
-      object-fit: contain; /* ESSA LINHA TIRA O ZOOM GIGANTE */
+       width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
     }
 
     
@@ -162,11 +163,11 @@
    <!-- Fecha a col-lg-8 --
 -->
 <!--<div class="row gy-4 align-items-stretch"> <!-- align-items-stretch deixa as duas caixas da mesma altura -->
-<div class="container">
+<div class="container-fluid">
   <div class="row justify-content-center align-items-center text-center">
 
     <!-- VÍDEO -->
-    <div class="col-lg-5 mb-4">
+    <div class="col-lg-7 mb-4">
       <div class="video-container">
         <video controls>
           <source src="playicebox.mp4" type="video/mp4">
@@ -175,8 +176,8 @@
     </div>
 
     <!-- DESCRIÇÃO -->
-    <div class="col-lg-5">
-      <div class="portfolio-info">
+<div class="col-lg-7">
+  <div class="portfolio-info">
         <h3>Descrição</h3>
         <p style="text-align: justify;">
           <strong>
