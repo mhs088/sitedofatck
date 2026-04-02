@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Desafio 1 - Tigre e Chacal</title>
+  <title>Melhor jogada do TCK na abyss</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,7 +26,27 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
+    
+    /* CSS DO VÍDEO - CORRIGE O ZOOM */
+    .video-container {
+      background: #000;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    }
+    video {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain; /* ESSA LINHA TIRA O ZOOM GIGANTE */
+    }
 
+    
+    }
+  </style>
   <!-- =======================================================
   * Template Name: Arsha
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -44,20 +64,20 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Enigma dos Numeros</h1>
+        <h1 class="sitename">Site do TCK</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
       
     
-          <!-- <li><a href="#services">Desafios</a></li> -->
-          <li class="dropdown"><a href="#services"><span>Desafios</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li><a href="#services">MAPAS</a></li> -->
+          <li class="dropdown"><a href="#services"><span>Outros mapas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="D1.html">Desafio 1</a></li>
-              <li><a href="D2.html">Desafio 2</a></li>
-              <li><a href="D3.html">Desafio 3</a></li>
-              <li><a href="D4.html">Desafio 4</a></li>
+            <li><a href="D1.html">ASCENT</a></li>
+            <li><a href="D2.html"> BIND </a></li>
+              <li><a href="D3.html"> ICE BOX </a></li>
+
             </ul>
           </li>
 
@@ -89,11 +109,11 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Desafios</a></li>
-            <li class="current">O valor das Escravas</li>
+            <li><a href="index.html">MAPAS</a></li>
+            <li class="current">ABYSS</li>
           </ol>
         </nav>
-        <h1>O valor das Escravas</h1>
+        <h1>MELHOR PLAY NA ABYSS</h1>
       </div>
     </div><!-- End Page Title -->
 
@@ -122,42 +142,62 @@
                   }
                 }
               </script>
+<div class="row gy-4">
+<!--
+-  <!- COLUNA DA ESQUERDA (VÍDEO) --
+  <div class="col-lg-8">
+    <div class="portfolio-details-slider swiper init-swiper">
+      <!-- O seu <script> do swiper-config deve ficar aqui dentro --
 
-              <div class="swiper-wrapper align-items-center">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide d-flex justify-content-center">
+          <video controls class="img-fluid" style="max-height: 500px; width: auto; border-radius: 10px;">
+            <source src="playascent.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+          </video>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div> <!-- Fecha o portfolio-details-slider -->
+   <!-- Fecha a col-lg-8 --
+-->
+<!--<div class="row gy-4 align-items-stretch"> <!-- align-items-stretch deixa as duas caixas da mesma altura -->
+<div class="row gy-4 justify-content-center align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/escravo.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/pitagoras.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/formula.png" alt="">
-                </div>
-
-          
-
-              </div>
-              <div class="swiper-pagination"></div>
+  <!-- COLUNA DO VÍDEO (Ajustada para col-lg-7) -->
+   <div class="col-lg-7">
+            <div class="video-container">
+              <video controls>
+                <source src="playabyss.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+              </video>
             </div>
           </div>
+  <!-- COLUNA DA DESCRIÇÃO (Ajustada para col-lg-5 para ficar mais larga) -->
+  <div class="col-lg-5">
+    <div class="portfolio-info" style="height: 100%; display: flex; flex-direction: column; justify-content: center; border-radius: 10px;">
+      <h3>Descrição</h3>
+      <p style="text-align: justify; line-height: 1.6;">
+        <strong>Neste vídeo, o TCK faz uma jogada um tanto exótica: joga-se para fora do mapa e utiliza o planar da Jett, junto com o dash e o updraft, para ganhar altura e ter visão total. Quando chega ao bomb, ele incrivelmente abate o primeiro inimigo com a última faca da ult. Na sequência, elimina os outros dois, deixando seus companheiros de time sem reação e surpresos com tamanha habilidade.</strong>
+      </p>
+    </div>
+  </div>
+            </center>
 
-          <div class="col-lg-4">
+         <!-- <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Problema</h3>
+              <h3>Descrição</h3>
               
-                <p><strong>Um egípcio visitou Beremiz com uma carta do poeta Iezid, apresentando-o a amigos antes da aula, acompanhado por três escravos devido ao temor de um ataque do ciumento Tara-Tir. No palácio de Iezid, o shake apresentou o príncipe Cluzir-el-din-Mubarec-Schá e pediu a Beremiz que explicasse a contribuição da matemática indiana.</strong></p>
+                <p><strong>Neste vídeo, você verá um ace feito pelo próprio TCK. Ele começa sua jogada no meio do mapa eliminando seus inimigos e, para mostrar o nível de profissionalismo que possui, ele nega aos companheiros de time o desejo de abater os cinco oponentes. Mas, mesmo assim, mostrando sua habilidade, ele mata o último e diz o seu famoso bordão: "O sujooo!". </strong></p>
               
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Resolução</h2>
+              <!--<h2>Resolução</h2>
               <p>
-                Aceitando o desafio, Beremiz utilizou o teorema de Pitágoras para calcular o valor de uma escrava, aplicando a fórmula (c² = a² + b²) em um triângulo retângulo e relacionando as medidas dos lados às características da escrava, demonstrando assim sua habilidade como calculista.
+                A fábula mostra como o poder, a ambição e a subserviência se relacionam. O tigre é punido ao tentar se beneficiar injustamente, enquanto o chacal agrada o leão entregando tudo a ele. Porém, mesmo sendo submisso, o chacal também é descartado, revelando a fragilidade daqueles que se submetem aos poderosos.
               </p>
             </div>
-          </div>
+          </div>-->
 
         </div>
 
@@ -235,9 +275,9 @@
     </div> -->
 
     <div class="container copyright text-center mt-4">
-      <p>© <span></span> <strong class="px-1 sitename"></strong> <span>Murilo Kimura, Matheus dos Santos, Lucas de Freitas, Marcos Toda & Kevin Spani</span></p>
+      <p>© <span></span> <strong class="px-1 sitename"></strong> <span>thzin_da_silva</span></p>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">Grupo 3</a>
+        Designed by <a href="https://bootstrapmade.com/">thzin</a>
       </div>
     </div>
 
