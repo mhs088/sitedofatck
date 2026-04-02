@@ -26,7 +26,27 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
+    
+    /* CSS DO VÍDEO - CORRIGE O ZOOM */
+    .video-container {
+      background: #000;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    }
+    video {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain; /* ESSA LINHA TIRA O ZOOM GIGANTE */
+    }
 
+    
+    }
+  </style>
   <!-- =======================================================
   * Template Name: Arsha
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
@@ -51,10 +71,9 @@
         <ul>
       
     
-          <!-- <li><a href="#services">Desafios</a></li> -->
+          <!-- <li><a href="#services">MAPAS</a></li> -->
           <li class="dropdown"><a href="#services"><span>Outros mapas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-             <!-- <li><a href="D1.html">Desafio 1</a></li> -->
               <li><a href="D2.html"> BIND </a></li>
               <li><a href="D3.html"> ICE BOX </a></li>
               <li><a href="D4.html"> ABYSS </a></li>
@@ -142,20 +161,17 @@
    <!-- Fecha a col-lg-8 --
 -->
 <!--<div class="row gy-4 align-items-stretch"> <!-- align-items-stretch deixa as duas caixas da mesma altura -->
+<div class="row gy-4 justify-content-center align-items-center">
 
   <!-- COLUNA DO VÍDEO (Ajustada para col-lg-7) -->
-  <div class="col-lg-7">
-    <div class="portfolio-details-slider swiper init-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide d-flex justify-content-center">
-          <video controls class="img-fluid" style="width: auto; max-height: 500px; object-fit: cover; border-radius: 10px; background: #000;">
-            <source src="playascent.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-
+   <div class="col-lg-7">
+            <div class="video-container">
+              <video controls>
+                <source src="playascent.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+              </video>
+            </div>
+          </div>
   <!-- COLUNA DA DESCRIÇÃO (Ajustada para col-lg-5 para ficar mais larga) -->
   <div class="col-lg-5">
     <div class="portfolio-info" style="height: 100%; display: flex; flex-direction: column; justify-content: center; border-radius: 10px;">
